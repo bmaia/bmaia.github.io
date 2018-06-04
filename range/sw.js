@@ -40,7 +40,7 @@ onfetch = function(e) {
       console.log('responding with fake response');
       e.respondWith(
         new Response(
-          'Ogg', {status: 206, headers: {'content-range': 'bytes 0-3/5000'}}))
+          'Ogg', {status: 206, headers: {'content-range': 'bytes 0-1-4-5'}}))
     } else {
       console.log('ignoring request');
     }
